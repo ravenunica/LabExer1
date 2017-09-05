@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roseleen.gradecomputation.MainActivity"
+    android:stretchColumns="0,1">
+
+    <TextView
+        android:layout_marginTop="70dp"/>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz 1"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#db4c66"/>
+
+        <EditText
+            android:id="@+id/etQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Quiz 1"
+            android:textSize="15sp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz 2"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#db4c66"/>
+
+        <EditText
+            android:id="@+id/etQ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Quiz 2"
+            android:textSize="15sp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seatworks"
+            android:textColor="#db4c66"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etSW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Seatwork"
+            android:textSize="15sp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab Exercises"
+            android:textColor="#db4c66"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etLabEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Lab Exercises"
+            android:textSize="15sp"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major Exam"
+            android:textColor="#db4c66"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etMajEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter Major Exam"
+            android:textSize="15sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnComp"
+            android:layout_width="20dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/etMajEx"
+
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:onClick="callSecondActivity"
+            android:text="Compute"
+            android:textColor="#db4c66"/>
+    </TableRow>
+</TableLayout>
